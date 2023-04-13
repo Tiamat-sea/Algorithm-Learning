@@ -1,0 +1,22 @@
+//该文件仅作解释，演示使用，与项目代码运行无关
+cmake_minimum_required(VERSION 3.23)//版本支持信息
+project(leetcode-array_linkedlist)//项目名称
+
+set(CMAKE_CXX_STANDARD 20)//CPP标准，这里是20，及2020年发布
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY bin)//设置二进制文件，即可执行文件exe输出目录为bin(在cmake-build-debug下)
+
+//以下为每道题目对应的编译信息，即添加到目标，括号内第一项为输出名称，第二三项为该输出项需要使用的源文件
+add_executable(0_test                               0_test.cpp)
+add_executable(19_remove_nth_node_from_end_of_list  19_remove_nth_node_from_end_of_list.cpp)
+add_executable(24_swap_nodes_in_pairs               24_swap_nodes_in_pairs.cpp)
+add_executable(27_remove_element                    27_remove_element.cpp)
+add_executable(59_spiral_matrix_II                  vector_output.h         59_spiral_matrix_II.cpp)
+add_executable(142_Linked_List_Cycle_II             142_Linked_List_Cycle_II.cpp)
+add_executable(203_remove_linked_list_elements      203_remove_linked_list_elements.cpp)
+add_executable(206_reverse_linked_list              linked_list.h           206_reverse_linked_list.cpp)
+add_executable(209_minimum_size_subarray_sum        209_minimum_size_subarray_sum.cpp)
+add_executable(704_binary_search                    704_binary_search.cpp)
+add_executable(707_design_linked_list               707_design_linked_list.cpp)
+add_executable(977_squares_of_a_sorted_array        vector_output.h         977_squares_of_a_sorted_array.cpp)
+add_executable(02_07_Intersection_of_Two_Linked_Lists_LCCI 02_07_Intersection_of_Two_Linked_Lists_LCCI.cpp)
